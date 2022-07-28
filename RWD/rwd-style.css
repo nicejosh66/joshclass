@@ -1,0 +1,493 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    font-size: 18px;
+}
+
+body {
+    background-color: #441212;
+}
+
+/*電腦版開始  */
+/*電腦版媒體查詢 */
+@media screen and (min-width:992px) {
+    .container {
+        width: 90%;
+        margin: 50px auto;
+        background-color: #fff;
+        box-shadow: 0px 0px 20px 5px #e9d9d9;
+        position: relative;
+    }
+
+    .mylogo {
+        color: #240a0a;
+        font-size: 5rem;
+        font-family: 'Noto Serif TC';
+        text-shadow: 2px 2px 10px #e9d9d9;
+        position: absolute;
+        top: 138px;
+        right: 129px;
+        z-index: 1000;
+    }
+
+    .myheader {
+        height: 300px;
+        background-image: url("images/bg1.png");
+        background-size: cover;
+        background-position: 0px 74%;
+        opacity: 0.5;
+    }
+
+    .mynav {
+        background-image: linear-gradient(180deg, rgba(36, 14, 1) 0%, rgba(75, 32, 0.6)20%, rgba(130, 91, 91, 0.8) 60%, rgb(231, 212, 202) 100%);
+        width: 100%;
+        position: absolute;
+        top: 38px;
+        border-bottom: 2px sold #fff;
+    }
+
+    .mynav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .mynav li {
+        display: inline-block;
+        padding: 20px 15px;
+    }
+
+    .mynav a {
+        color: #fff;
+        font-size: 1.4rem;
+        text-decoration: none;
+        font-family: 'Noto Serif TC', serif;
+        transition: 0.8s;
+    }
+
+    .mynav a:hover {
+        color: #4d1515;
+        text-shadow: 1px 1px 3px #fff;
+    }
+
+    .myaside {
+        width: 30%;
+        float: left;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .myaside-a,
+    .myaside-b {
+        color: #6f000e;
+        text-align: justify;
+        font-size: 1.2rem;
+        font-family: 'Edu QLD Beginner', cursive;
+    }
+
+    .myaside h2 {
+        background-color: #4d000f;
+        text-align: center;
+        color: #fff;
+        font-size: 2rem;
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    .myaside img {
+        width: 90%;
+        border: 15px solid #fff;
+        border-radius: 10px;
+        box-shadow: 3px 3px 9px 1px #000;
+    }
+
+    .mymain {
+        width: 70%;
+        float: left;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .mymain h1 {
+        font-size: 2.8rem;
+        text-align: center;
+        color: #fff;
+        font-family: 'Noto Sans TC', sans-serif;
+        background-image: linear-gradient(90deg, #ffffff 0%, #351616 85%, #ffffff 100%);
+        border: 1px solid #000;
+
+    }
+
+    .mymain p {
+        color: #6f000e;
+        font-family: 'Pacifico', cursive;
+        text-shadow: 1px 1px 60px #000;
+        font-size: 1.6rem;
+    }
+
+    .myfooter {
+        clear: both;
+        text-align: center;
+        padding: 25px 0px;
+        background-image: linear-gradient(0deg, #441212 20%, #fff 100%);
+    }
+
+    .myfooter h3 {
+        font-size: 2.5rem;
+        font-family: 'Lovster', cursive;
+        color: #fff;
+        text-shadow: 1px 1px 5px #000;
+    }
+
+    .myfooter h3 span {
+        font-size: 0.8rem;
+        color: #ababab;
+    }
+
+    .myfooter img {
+        width: 28px;
+        vertical-align: middle;
+    }
+
+    .myfooter a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    .myfooter a:hover {
+        color: #b3100b;
+    }
+
+
+
+}
+/*電腦版結束  */
+
+/*平板版(尺寸 576~991px 的媒體查詢*/
+@media screen and (min-width:576px) and (max-width:991px) {
+    .container {
+        background-color: #fff;
+        position: relative;
+    }
+
+    .mylogo {
+        color: #240a0a;
+        font-size: 5rem;
+        /* font-family: 'Noto Serif TC'; */
+        font-family: 'Lobster', cursive;
+        text-shadow: 2px 2px 6px #e9d9d9;
+        position: absolute;
+        top: 30px;
+        /* right: 129px; */
+        left: 67px;
+        z-index: 1000;
+    }
+
+    .myheader {
+        height: 180px;
+        background-image: url("images/bg1.png");
+        background-size: cover;
+        background-position: 0px 74%;
+        opacity: 0.5;
+    }
+
+    .mynav {
+        /* background-image: linear-gradient(180deg, rgba(36, 14, 1) 0%, rgba(75, 32, 0.6)20%, rgba(130, 91, 91, 0.8) 60%, rgb(231, 212, 202) 100%); */
+        /* width: 100%; */
+        /* position: absolute; */
+        /* top: 38px; */
+        background-color: #330007;
+        border-bottom: 2px sold #fff;
+
+    }
+
+    .mynav ul {
+        list-style-type: none;
+        text-align: center;
+        /* new */
+        columns: 2;
+    }
+
+    .mynav li {
+        /* display: inline-block; */
+        padding: 20px 15px;
+    }
+
+    .mynav a {
+        color: #fff;
+        font-size: 1.4rem;
+        text-decoration: none;
+        font-family: 'Noto Serif TC', serif;
+        transition: 0.8s;
+    }
+
+    .mynav a:hover {
+        color: #4d1515;
+        text-shadow: 1px 1px 3px #fff;
+    }
+
+    .myaside {
+        /* width: 30%; */
+        /* float: left; */
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .myaside-a,
+    .myaside-b {
+        width: 50%;
+        float: left;
+        color: #6f000e;
+        text-align: justify;
+        font-size: 1.2rem;
+        font-family: 'Edu QLD Beginner', cursive;
+        /* new */
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .myaside h2 {
+        background-color: #4d000f;
+        text-align: center;
+        color: #fff;
+        font-size: 2rem;
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    .myaside img {
+        width: 90%;
+        border: 15px solid #fff;
+        border-radius: 10px;
+        box-shadow: 3px 3px 9px 1px #000;
+    }
+
+    .mymain {
+        /* width: 70%; */ 
+        /* float: left; */
+        padding: 10px;
+        box-sizing: border-box;
+        clear: both;
+    }
+
+    .mymain h1 {
+        font-size: 2.8rem;
+        text-align: center;
+        color: #fff;
+        font-family: 'Noto Sans TC', sans-serif;
+        background-image: linear-gradient(90deg, #ffffff 0%, #351616 85%, #ffffff 100%);
+        border: 1px solid #000;
+
+    }
+
+    .mymain p {
+        color: #6f000e;
+        font-family: 'Pacifico', cursive;
+        text-shadow: 1px 1px 60px #000;
+        font-size: 1.6rem;
+    }
+
+    .mymain img {
+        width: 100%;
+    }
+ 
+    .myfooter {
+        /* clear: both; */
+        text-align: center;
+        padding: 25px 0px;
+        background-image: linear-gradient(0deg, #441212 20%, #fff 100%);
+    }
+
+    .myfooter h3 {
+        font-size: 2.5rem;
+        font-family: 'Lovster', cursive;
+        color: #fff;
+        text-shadow: 1px 1px 5px #000;
+    }
+
+    .myfooter h3 span {
+        font-size: 0.8rem;
+        color: #ababab;
+    }
+
+    .myfooter img {
+        width: 28px;
+        vertical-align: middle;
+    }
+
+    .myfooter a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .myfooter a:hover {
+        color: #b3100b;
+    }
+
+
+
+}
+/*平板版結束 */
+
+/*手機版(尺寸 576~991px 的媒體查詢*/
+@media screen and (max-width:575px)  {
+    .container {
+        background-color: #fff;
+        position: relative;
+    }
+
+    .mylogo {
+
+        color:#fff;
+        background-color: #240a0a;
+        font-size: 4rem;
+        font-family: 'LObster',cursive;
+        text-align: center;
+        text-shadow: 2px 2px 6px #e06f6f;
+        padding: 20px 0px;
+
+
+    }
+
+    .myheader {
+        display: none;
+    }
+
+    .mynav {
+
+        background-color: #ffdadf;
+        border-bottom: 2px sold #fff;
+
+    }
+
+    .mynav ul {
+        list-style-type: none;
+        text-align: center;
+
+    }
+
+    .mynav li {
+        padding: 20px 15px;
+    }
+
+    .mynav a {
+        color:#240a0a;
+        font-size: 1.8rem;
+        text-decoration: none;
+        font-family: 'Noto Serif TC', serif;
+        transition: 0.8s;
+    }
+
+    .mynav a:hover {
+    color:#fff;
+    text-shadow: 1px 1px 3px #fff;                                                                                                          ;
+    }
+
+    .myaside {
+        /* width: 30%; */
+        /* float: left; */
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .myaside-a,
+    .myaside-b {
+        color: #6f000e;
+        text-align: justify;
+        font-size: 1.2rem;
+        font-family: 'Edu QLD Beginner', cursive;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .myaside h2 {
+        background-color: #4d000f;
+        text-align: center;
+        color: #fff;
+        font-size: 2rem;
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    .myaside img {
+        width: 90%;
+        border: 15px solid #fff;
+        border-radius: 10px;
+        box-shadow: 3px 3px 9px 1px #000;
+    }
+
+    .mymain {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .mymain h1 {
+        font-size: 2.8rem;
+        text-align: center;
+        color: #fff;
+        font-family: 'Noto Sans TC', sans-serif;
+        background-image: linear-gradient(90deg, #ffffff 0%, #351616 85%, #ffffff 100%);
+        border: 1px solid #000;
+
+    }
+
+    .mymain p {
+        color: #6f000e;
+        font-family: 'Pacifico', cursive;
+        text-shadow: 1px 1px 6px #000;
+        font-size: 1.6rem;
+    }
+
+    .mymain img {
+        width: 100%;
+    }
+ 
+    .myfooter {
+   
+        text-align: center;
+        padding: 25px 0px;
+        background-image: linear-gradient(0deg, #441212 20%, #fff 100%);
+    }
+
+    .myfooter h3 {
+        font-size: 2.5rem;
+        font-family: 'Lobster', cursive;
+        color: #fff;
+        text-shadow: 1px 1px 5px #000;
+    }
+
+    .myfooter h3 span {
+        font-size: 0.8rem;
+        color: #ababab;
+    }
+
+    .myfooter img {
+        width: 28px;
+        vertical-align: middle;
+    }
+
+    .myfooter a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .myfooter a:hover {
+        color: #b3100b;
+    }
+
+    .myfooter span{
+        display: block;
+    }
+
+
+
+}
+ /*手機版結束 */
+
